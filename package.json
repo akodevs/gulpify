@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "Simple frontend template",
   "main": "Simple template for MEAN stack app with Gulp + Browserify server/server.js",
-  "scripts": {
-    "test": "gulp test",
-    "prepare": "npm install && bower install --allow-root --config.interactive=false && gulp inject",
-    "start": "gulp serve"
-  },
   "repository": {
     "type": "git",
     "url": "https://meshupstudio@bitbucket.org/meshupstudio/front-end-template.git"
@@ -31,5 +26,18 @@
     "gulp-uglify": "^2.0.0",
     "jshint": "^2.9.3",
     "mocha": "^3.1.2"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "prepare": "npm install && bower install --allow-root --config.interactive=false && gulp inject",
+    "start": "gulp serve"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
   }
 }
