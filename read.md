@@ -1,6 +1,6 @@
 # Gulpify
 
-Simple template for JS app with Gulp + Browserify 
+Simple template for MEAN stack app with Gulp + Browserify 
 
 ## Getting Started
 

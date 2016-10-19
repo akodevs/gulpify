@@ -1,0 +1,19 @@
+{
+  "name": "clear",
+  "version": "1.0.0",
+  "description": "Simple frontend template",
+  "main": "Simple template for MEAN stack app with Gulp + Browserify server/server.js",
+  "scripts": {
+    "test": "gulp test",
+    "prepare": "npm install && bower install --allow-root --config.interactive=false && gulp inject",
+    "start": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://meshupstudio@bitbucket.org/meshupstudio/front-end-template.git"
+  },
+  "author": "Kurt Garcia",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/meshupstudio/front-end-template#readme",
+  "private": true
+}
