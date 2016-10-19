@@ -2,7 +2,7 @@
  * Overview Defines
  * gulp install - establish app for development preview
  * 				- installs npm and bower
- *				- compiles jade inot .tmp
+ *				- compiles jade into .tmp
  * 				- injects styles, vendor and app scripts and styles into client/index.html
  */
 
@@ -23,7 +23,7 @@ var minifyCSS = require('gulp-minify-css');
 var jsHint = require('gulp-jshit');
 
 // Test Depencies
-var mochaPhantomjs('gulp-mocha-phantomjs');
+var mochaPhantomjs = require('gulp-mocha-phantomjs');
 
 
 
