@@ -1,7 +1,7 @@
 {
   "name": "clear",
   "version": "1.0.0",
-  "description": "Simple frontend template",
+  "description": "The former took the headache out of requiring modules and dependencies, and the latter made defining tasks for linting, testing, less compilation, minification, and uglification a breeze",
   "main": "Simple template for MEAN stack app with Gulp + Browserify server/server.js",
   "repository": {
     "type": "git",
