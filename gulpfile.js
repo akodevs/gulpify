@@ -109,4 +109,6 @@ gulp.task('uglify', ['browserify-client'], function() {
     .pipe(gulp.dest('public/javascripts'));
 });
 
-gulp.task('build', ['uglify', 'minify']);
+gulp.task('build', ['uglify', 'minify']); 
+
+gulp.task('default', ['test', 'build', 'watch']);
