@@ -33,7 +33,7 @@
     "start": "gulp serve"
   },
   "browserify-shim": {
-    "jquery": "$",
+    "jquery": "$"
   },
   "browserify": {
     "transform": [
