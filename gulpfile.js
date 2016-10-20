@@ -16,7 +16,7 @@ var uglify = require('uglify');
 
 // Style Dependencies
 var sass = require('gulp-sass');
-var predix = require('gulp-autoprefixer');
+var prefix = require('gulp-autoprefixer');
 var minifyCSS = require('gulp-minify-css');
 
 // Development Dependecies
@@ -25,5 +25,14 @@ var jsHint = require('gulp-jshit');
 // Test Depencies
 var mochaPhantomjs = require('gulp-mocha-phantomjs');
 
+gulp.task('lint-client', function() {
+	return gulp.src('./client/**/*.js')
+		.pipe(jshint())
+		.pipe(jshint.reporter('default'));
+});
 
-
+gulp.task('lint-test', function() {
+	return gulp.src('./test/**/*.js')
+		.pipe(jshint())
+		.pipe(jshint.reporter('default'));
+});
