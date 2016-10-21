@@ -45,7 +45,7 @@ gulp.task('browserify-client', ['lint-client'], function() {
     .pipe(browserify({
       insertGlobals: true
     }))
-    .pipe(rename('sample-app.js'))
+    .pipe(rename('main.js'))
     .pipe(gulp.dest('build/assets/scripts'))
     .pipe(gulp.dest('public/javascripts'));
 }); 
